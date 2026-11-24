@@ -1,0 +1,15 @@
+version: "1"
+service: test
+revision: "2026.11.24.1"
+description: |
+  Throwaway service for testing the federation sync against a fork. Do not merge.
+
+rules:
+  - method: GET
+    match: '/test/**'
+    priority: 1000
+    tuples:
+      - user_resource_type: user
+        permission: can_access
+        object_resource_type: test/feature
+        object_resource_id: home
