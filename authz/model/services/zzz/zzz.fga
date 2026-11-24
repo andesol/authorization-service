@@ -1,0 +1,5 @@
+module zzz
+
+type zzz/thing
+  relations
+    define viewer: [user]
