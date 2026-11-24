@@ -1,0 +1,6 @@
+module test
+
+# Throwaway service for testing the federation sync against a fork. Do not merge.
+type test/feature
+  relations
+    define can_access: [user, role#assignee]
